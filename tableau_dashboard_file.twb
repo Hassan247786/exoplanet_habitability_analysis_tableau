@@ -1,0 +1,2330 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='tableau_dashboard_file' path='/workbooks' revision='1.5' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='astronomy_data_final' inline='true' name='federated.10yltex0zyrdip1ah1be206xk5m5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='astronomy_data_final' name='textscan.1tqpz9v035edi313718hz1e7jc56'>
+            <connection class='textscan' directory='E:/Rockborne work/Tableau/tableau_project' filename='astronomy_data_final.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1tqpz9v035edi313718hz1e7jc56' name='astronomy_data_final.csv' table='[astronomy_data_final#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='real' name='distance' ordinal='1' />
+            <column datatype='real' name='stellar_magnitude' ordinal='2' />
+            <column datatype='string' name='planet_type' ordinal='3' />
+            <column datatype='real' name='discovery_year' ordinal='4' />
+            <column datatype='real' name='mass_multiplier' ordinal='5' />
+            <column datatype='string' name='mass_wrt' ordinal='6' />
+            <column datatype='real' name='radius_multiplier' ordinal='7' />
+            <column datatype='string' name='radius_wrt' ordinal='8' />
+            <column datatype='real' name='orbital_radius' ordinal='9' />
+            <column datatype='real' name='orbital_period' ordinal='10' />
+            <column datatype='real' name='eccentricity' ordinal='11' />
+            <column datatype='string' name='detection_method' ordinal='12' />
+            <column datatype='real' name='number_of_earth_masses' ordinal='13' />
+            <column datatype='real' name='number_of_earth_radii' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stellar_magnitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stellar_magnitude]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>stellar_magnitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>planet_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[planet_type]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>planet_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discovery_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[discovery_year]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>discovery_year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_multiplier</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mass_multiplier]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>mass_multiplier</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mass_wrt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mass_wrt]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>mass_wrt</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius_multiplier</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[radius_multiplier]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>radius_multiplier</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>radius_wrt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[radius_wrt]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>radius_wrt</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_radius</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orbital_radius]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>orbital_radius</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_period</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orbital_period]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>orbital_period</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eccentricity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eccentricity]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>eccentricity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_method]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>detection_method</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_earth_masses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_earth_masses]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>number_of_earth_masses</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_earth_radii</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_earth_radii]</local-name>
+            <parent-name>[astronomy_data_final.csv]</parent-name>
+            <remote-alias>number_of_earth_radii</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Star Mass' datatype='real' name='[Calculation_0414257736749057]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[orbital_radius]^3 / [orbital_period]^2' />
+      </column>
+      <column caption='Star Luminosity' datatype='real' name='[Calculation_0414257736945667]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_0414257736749057]^3.5' />
+      </column>
+      <column caption='T_eq (K)' datatype='real' name='[Calculation_0414257737187332]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='278.3 * [Calculation_0414257736945667]^0.25 * (1/[orbital_radius])^0.5 * (1-0)^0.25' />
+      </column>
+      <column caption='T_eq (°C)' datatype='real' name='[Calculation_0414257737797637]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_0414257737187332] - 273.15' />
+      </column>
+      <column caption='astronomy_data_final.csv' datatype='table' name='[__tableau_internal_object_id__].[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]' role='measure' type='quantitative' />
+      <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+      <column caption='Discovery Year' datatype='real' name='[discovery_year]' role='dimension' type='quantitative' />
+      <column caption='Distance' datatype='real' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Eccentricity' datatype='real' name='[eccentricity]' role='measure' type='quantitative' />
+      <column caption='Mass Multiplier' datatype='real' name='[mass_multiplier]' role='measure' type='quantitative' />
+      <column caption='Mass Wrt' datatype='string' name='[mass_wrt]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Number Of Earth Masses' datatype='real' name='[number_of_earth_masses]' role='measure' type='quantitative' />
+      <column caption='Number Of Earth Radii' datatype='real' name='[number_of_earth_radii]' role='measure' type='quantitative' />
+      <column caption='Orbital Period' datatype='real' name='[orbital_period]' role='measure' type='quantitative' />
+      <column caption='Orbital Radius' datatype='real' name='[orbital_radius]' role='measure' type='quantitative' />
+      <column caption='Planet Type' datatype='string' name='[planet_type]' role='dimension' type='nominal' />
+      <column caption='Radius Multiplier' datatype='real' name='[radius_multiplier]' role='measure' type='quantitative' />
+      <column caption='Radius Wrt' datatype='string' name='[radius_wrt]' role='dimension' type='nominal' />
+      <column caption='Stellar Magnitude' datatype='real' name='[stellar_magnitude]' role='measure' type='quantitative' />
+      <column-instance column='[detection_method]' derivation='None' name='[none:detection_method:nk]' pivot='key' type='nominal' />
+      <column-instance column='[discovery_year]' derivation='None' name='[none:discovery_year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[planet_type]' derivation='None' name='[none:planet_type:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Detection Method,Discovery Year)' hidden='true' name='[Action (Detection Method,Discovery Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[detection_method]' />
+          <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Detection Method,Discovery Year)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:detection_method:nk]' />
+          <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Name,Planet Type)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:name:nk]' />
+          <groupfilter function='level-members' level='[none:planet_type:nk]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/hassa/AppData/Local/Temp/TableauTemp/#TableauTemp_1ekmnkf0u286sw190n0xe01qinqx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2026 11:44:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5251</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distance</remote-alias>
+              <ordinal>1</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1754</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stellar_magnitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stellar_magnitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stellar_magnitude</remote-alias>
+              <ordinal>2</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1867</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>planet_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[planet_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>planet_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>discovery_year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[discovery_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>discovery_year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mass_multiplier</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mass_multiplier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mass_multiplier</remote-alias>
+              <ordinal>5</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1149</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mass_wrt</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mass_wrt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mass_wrt</remote-alias>
+              <ordinal>6</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>radius_multiplier</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[radius_multiplier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>radius_multiplier</remote-alias>
+              <ordinal>7</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>710</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>radius_wrt</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[radius_wrt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>radius_wrt</remote-alias>
+              <ordinal>8</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orbital_radius</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[orbital_radius]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orbital_radius</remote-alias>
+              <ordinal>9</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1839</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orbital_period</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[orbital_period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orbital_period</remote-alias>
+              <ordinal>10</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>842</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eccentricity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[eccentricity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eccentricity</remote-alias>
+              <ordinal>11</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detection_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[detection_method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detection_method</remote-alias>
+              <ordinal>12</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_earth_masses</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[number_of_earth_masses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_earth_masses</remote-alias>
+              <ordinal>13</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1294</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_earth_radii</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[number_of_earth_radii]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_earth_radii</remote-alias>
+              <ordinal>14</ordinal>
+              <family>astronomy_data_final.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>837</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:planet_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gas Giant&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Terrestrial&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Super Earth&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Neptune-like&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Earth (reference)&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:detection_method:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Transit Timing Variations&quot;</bucket>
+            </map>
+            <map to='#bf193a'>
+              <bucket>&quot;Transit&quot;</bucket>
+            </map>
+            <map to='#ce253c'>
+              <bucket>&quot;Radial Velocity&quot;</bucket>
+            </map>
+            <map to='#dc333f'>
+              <bucket>&quot;Pulsation Timing Variations&quot;</bucket>
+            </map>
+            <map to='#e74445'>
+              <bucket>&quot;Pulsar Timing&quot;</bucket>
+            </map>
+            <map to='#ee584c'>
+              <bucket>&quot;Orbital Brightness Modulation&quot;</bucket>
+            </map>
+            <map to='#f36a57'>
+              <bucket>&quot;Gravitational Microlensing&quot;</bucket>
+            </map>
+            <map to='#f77c66'>
+              <bucket>&quot;Eclipse Timing Variations&quot;</bucket>
+            </map>
+            <map to='#fa8d77'>
+              <bucket>&quot;Disk Kinematics&quot;</bucket>
+            </map>
+            <map to='#fc9e8b'>
+              <bucket>&quot;Direct Imaging&quot;</bucket>
+            </map>
+            <map to='#fead9e'>
+              <bucket>&quot;Astrometry&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='name' />
+        <field-sort-custom-order field='distance' />
+        <field-sort-custom-order field='stellar_magnitude' />
+        <field-sort-custom-order field='planet_type' />
+        <field-sort-custom-order field='discovery_year' />
+        <field-sort-custom-order field='mass_multiplier' />
+        <field-sort-custom-order field='mass_wrt' />
+        <field-sort-custom-order field='radius_multiplier' />
+        <field-sort-custom-order field='radius_wrt' />
+        <field-sort-custom-order field='orbital_radius' />
+        <field-sort-custom-order field='orbital_period' />
+        <field-sort-custom-order field='eccentricity' />
+        <field-sort-custom-order field='detection_method' />
+        <field-sort-custom-order field='number_of_earth_masses' />
+        <field-sort-custom-order field='number_of_earth_radii' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_0414257736683520' />
+        <field-sort-custom-order field='Calculation_0414257736749057' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='astronomy_data_final.csv' id='astronomy_data_final.csv_49D624FEEF1544A0A66A935AC8FF40E9'>
+            <properties context=''>
+              <relation connection='textscan.1tqpz9v035edi313718hz1e7jc56' name='astronomy_data_final.csv' table='[astronomy_data_final#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='real' name='distance' ordinal='1' />
+                  <column datatype='real' name='stellar_magnitude' ordinal='2' />
+                  <column datatype='string' name='planet_type' ordinal='3' />
+                  <column datatype='real' name='discovery_year' ordinal='4' />
+                  <column datatype='real' name='mass_multiplier' ordinal='5' />
+                  <column datatype='string' name='mass_wrt' ordinal='6' />
+                  <column datatype='real' name='radius_multiplier' ordinal='7' />
+                  <column datatype='string' name='radius_wrt' ordinal='8' />
+                  <column datatype='real' name='orbital_radius' ordinal='9' />
+                  <column datatype='real' name='orbital_period' ordinal='10' />
+                  <column datatype='real' name='eccentricity' ordinal='11' />
+                  <column datatype='string' name='detection_method' ordinal='12' />
+                  <column datatype='real' name='number_of_earth_masses' ordinal='13' />
+                  <column datatype='real' name='number_of_earth_radii' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.10yltex0zyrdip1ah1be206xk5m5'>
+      <datasources>
+        <datasource caption='astronomy_data_final' name='federated.10yltex0zyrdip1ah1be206xk5m5' />
+      </datasources>
+      <datasource-dependencies datasource='federated.10yltex0zyrdip1ah1be206xk5m5'>
+        <column-instance column='[planet_type]' derivation='None' name='[none:planet_type:nk]' pivot='key' type='nominal' />
+        <column caption='Planet Type' datatype='string' name='[planet_type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]'>
+        <groupfilter function='level-members' level='[none:planet_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_FA3E067DEF8243768C0F9FC9AB8F20EF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='mass_radius_landscape_of_known_exoplanets' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Planet Type' />
+        <param name='target' value='mass_radius_landscape_of_known_exoplanets' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action3_D462075BD626404DBFD34035F717AB02]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Exoplanet_Dashboard' type='sheet' worksheet='detection_methods' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Exoplanet_Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='T_eq'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Equilibrium Temperature in Ascending Order (Distances From Earth Labelled)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='astronomy_data_final' name='federated.10yltex0zyrdip1ah1be206xk5m5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10yltex0zyrdip1ah1be206xk5m5'>
+            <column caption='Star Mass' datatype='real' name='[Calculation_0414257736749057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[orbital_radius]^3 / [orbital_period]^2' />
+            </column>
+            <column caption='Star Luminosity' datatype='real' name='[Calculation_0414257736945667]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0414257736749057]^3.5' />
+            </column>
+            <column caption='T_eq (K)' datatype='real' name='[Calculation_0414257737187332]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='278.3 * [Calculation_0414257736945667]^0.25 * (1/[orbital_radius])^0.5 * (1-0)^0.25' />
+            </column>
+            <column caption='T_eq (°C)' datatype='real' name='[Calculation_0414257737797637]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0414257737187332] - 273.15' />
+            </column>
+            <column-instance column='[Calculation_0414257737797637]' derivation='Avg' name='[avg:Calculation_0414257737797637:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_earth_masses]' derivation='Avg' name='[avg:number_of_earth_masses:qk]' pivot='key' type='quantitative' />
+            <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+            <column caption='Discovery Year' datatype='real' name='[discovery_year]' role='dimension' type='quantitative' />
+            <column caption='Distance' datatype='real' name='[distance]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[discovery_year]' derivation='None' name='[none:discovery_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[planet_type]' derivation='None' name='[none:planet_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Earth Masses' datatype='real' name='[number_of_earth_masses]' role='measure' type='quantitative' />
+            <column caption='Orbital Period' datatype='real' name='[orbital_period]' role='measure' type='quantitative' />
+            <column caption='Orbital Radius' datatype='real' name='[orbital_radius]' role='measure' type='quantitative' />
+            <column caption='Planet Type' datatype='string' name='[planet_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0414257737797637]' derivation='Sum' name='[sum:Calculation_0414257737797637:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[distance]' derivation='Sum' name='[sum:distance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[Action (Detection Method,Discovery Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_D462075BD626404DBFD34035F717AB02]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[detection_method]' />
+              <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:number_of_earth_masses:qk]' included-values='in-range'>
+            <min>0.90000000000000002</min>
+            <max>1.1000000000000001</max>
+          </filter>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]'>
+            <groupfilter function='member' level='[none:name:nk]' member='&quot;Proxima Centauri b&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:number_of_earth_masses:qk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[Action (Detection Method,Discovery Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]' scope='cols' value='Equilibrium Temperature (°C)' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='cols' value='14' />
+            <format attr='font-size' scope='rows' value='14' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' value='T_Eq (°C)'>
+              <formatted-text>
+                <run>T_Eq (°C)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' />
+              <text column='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:distance:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]</rows>
+        <cols>[federated.10yltex0zyrdip1ah1be206xk5m5].[avg:Calculation_0414257737797637:qk]</cols>
+      </table>
+      <simple-id uuid='{04FAD89B-FA1E-49C0-9F65-E0819BBF6DD4}' />
+    </worksheet>
+    <worksheet name='detection_methods'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Exoplanets Per Detection Method by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='astronomy_data_final' name='federated.10yltex0zyrdip1ah1be206xk5m5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10yltex0zyrdip1ah1be206xk5m5'>
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+            <column caption='Discovery Year' datatype='real' name='[discovery_year]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[detection_method]' derivation='None' name='[none:detection_method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[discovery_year]' derivation='None' name='[none:discovery_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[planet_type]' derivation='None' name='[none:planet_type:nk]' pivot='key' type='nominal' />
+            <column caption='Planet Type' datatype='string' name='[planet_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[Exclusions (Detection Method,Discovery Year)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:detection_method:nk]' />
+                <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+              </groupfilter>
+              <groupfilter function='union'>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Direct Imaging&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2004.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2005.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2006.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2007.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2008.0' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Gravitational Microlensing&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2004.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2005.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2006.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2008.0' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Pulsar Timing&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1994.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2003.0' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Pulsation Timing Variations&quot;' />
+                  <groupfilter function='member' level='[none:discovery_year:ok]' member='2007.0' />
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Radial Velocity&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1995.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1996.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1997.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1998.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='1999.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2000.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2001.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2002.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2003.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2004.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2005.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2006.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2007.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2008.0' />
+                  </groupfilter>
+                </groupfilter>
+                <groupfilter function='crossjoin'>
+                  <groupfilter function='member' level='[none:detection_method:nk]' member='&quot;Transit&quot;' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2002.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2004.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2006.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2007.0' />
+                    <groupfilter function='member' level='[none:discovery_year:ok]' member='2008.0' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:discovery_year:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:discovery_year:ok]' member='%null%' />
+                <groupfilter function='member' level='[none:discovery_year:ok]' member='1992.0' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:discovery_year:ok]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[Exclusions (Detection Method,Discovery Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[cnt:name:qk]' scope='rows' value='Frequency' />
+            <format attr='height' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:discovery_year:ok]' value='41' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='27' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[cnt:name:qk]' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10yltex0zyrdip1ah1be206xk5m5].[cnt:name:qk]</rows>
+        <cols>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:discovery_year:ok]</cols>
+      </table>
+      <simple-id uuid='{D86AFCD8-C504-4297-BD63-F68288818979}' />
+    </worksheet>
+    <worksheet name='mass_radius_landscape_of_known_exoplanets'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Radius and Mass Ratio for Each Exoplanet by Planet Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='astronomy_data_final' name='federated.10yltex0zyrdip1ah1be206xk5m5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10yltex0zyrdip1ah1be206xk5m5'>
+            <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+            <column caption='Discovery Year' datatype='real' name='[discovery_year]' role='dimension' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[discovery_year]' derivation='None' name='[none:discovery_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[planet_type]' derivation='None' name='[none:planet_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Earth Masses' datatype='real' name='[number_of_earth_masses]' role='measure' type='quantitative' />
+            <column caption='Number Of Earth Radii' datatype='real' name='[number_of_earth_radii]' role='measure' type='quantitative' />
+            <column caption='Planet Type' datatype='string' name='[planet_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_earth_masses]' derivation='Sum' name='[sum:number_of_earth_masses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[number_of_earth_radii]' derivation='Sum' name='[sum:number_of_earth_radii:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[Action (Detection Method,Discovery Year)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_D462075BD626404DBFD34035F717AB02]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[detection_method]' />
+              <groupfilter function='level-members' level='[none:discovery_year:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[Exclusions (Name,Planet Type)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:name:nk]' />
+                <groupfilter function='level-members' level='[none:planet_type:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:name:nk]' member='&quot;HD 100546 b&quot;' />
+                <groupfilter function='member' level='[none:planet_type:nk]' member='&quot;Gas Giant&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[Action (Detection Method,Discovery Year)]</column>
+            <column>[federated.10yltex0zyrdip1ah1be206xk5m5].[Exclusions (Name,Planet Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]' field-type='quantitative' scale='log' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]' scope='rows' value='Planet Radius (Earth = 1)' />
+            <format attr='title' class='0' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]' scope='cols' value='Planet Mass (Earth = 1)' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]' value='14' />
+            <format attr='font-size' field='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]' value='14' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='line-end-size' id='annotation_0' value='small' />
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]' />
+              <lod column='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]</rows>
+        <cols>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run bold='true'>Earth (reference point)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='1.0459003857823848'>
+                  <node-reference>
+                    <axis>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_masses:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='0.98599155818954121'>
+                  <node-reference>
+                    <axis>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:number_of_earth_radii:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-53' y='143' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{6510162C-57E4-41A7-96A2-3868546A2267}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Exoplanet_Dashboard'>
+      <style />
+      <size maxheight='900' maxwidth='1300' minheight='900' minwidth='1300' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='8' param='horz' type-v2='layout-flow' w='98770' x='615' y='889'>
+            <zone h='98222' id='3' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+              <zone fixed-size='43' forceUpdate='true' h='5667' id='5' is-fixed='true' type-v2='text' w='98770' x='615' y='889'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontsize='18'>The Search for a Second Earth - Exoplanet Habitability Analysis</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='428' h='48445' id='6' is-fixed='true' name='mass_radius_landscape_of_known_exoplanets' w='98770' x='615' y='6556'>
+                <layout-cache minheight='207' minwidth='164' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44110' id='10' param='horz' type-v2='layout-flow' w='98770' x='615' y='55001'>
+                <zone fixed-size='546' h='44110' id='11' is-fixed='true' name='T_eq' w='42615' x='615' y='55001'>
+                  <layout-cache fixed-size-h='175' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='44110' id='13' name='detection_methods' w='56154' x='43230' y='55001'>
+                  <layout-cache cell-count-w='15' minheight='184' non-cell-size-w='75' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='130' h='8444' id='12' is-fixed='true' name='T_eq' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' type-v2='color' w='10308' x='846' y='89778' />
+        <zone fixed-size='282' h='26556' id='14' is-fixed='true' name='detection_methods' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]' type-v2='color' w='15846' x='83923' y='56333' />
+        <zone fixed-size='193' h='13111' id='9' is-fixed='true' name='mass_radius_landscape_of_known_exoplanets' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]' type-v2='color' w='11667' x='87667' y='33444' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='17' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+                <zone fixed-size='43' forceUpdate='true' h='5667' id='5' type-v2='text' w='98770' x='615' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='18'>The Search for a Second Earth - Exoplanet Habitability Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48445' id='6' is-fixed='true' name='mass_radius_landscape_of_known_exoplanets' w='98770' x='615' y='6556'>
+                  <layout-cache minheight='207' minwidth='164' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='193' h='13111' id='9' name='mass_radius_landscape_of_known_exoplanets' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]' type-v2='color' w='11667' x='87667' y='33444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44110' id='11' is-fixed='true' name='T_eq' w='42615' x='615' y='55001'>
+                  <layout-cache fixed-size-h='175' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='130' h='8444' id='12' name='T_eq' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' type-v2='color' w='10308' x='846' y='89778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44110' id='13' is-fixed='true' name='detection_methods' w='56154' x='43230' y='55001'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='282' h='26556' id='14' name='detection_methods' pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]' type-v2='color' w='15846' x='83923' y='56333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6DCFDE8E-1406-4C52-B143-991E6B337CEB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='mass_radius_landscape_of_known_exoplanets'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{63A791AF-2F69-4D9F-8D89-1CE8E774C128}' />
+    </window>
+    <window class='worksheet' name='T_eq'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:Calculation_0414257737797637:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]</field>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[sum:distance:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{649281A9-8CBE-4D96-8264-0CB7E8768796}' />
+    </window>
+    <window class='worksheet' name='detection_methods'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='208'>
+            <card pane-specification-id='0' param='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]</field>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:discovery_year:ok]</field>
+            <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA613A58-6F54-4021-AEB4-82E5A95C992D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Exoplanet_Dashboard'>
+      <viewpoints>
+        <viewpoint name='T_eq' />
+        <viewpoint name='detection_methods'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.10yltex0zyrdip1ah1be206xk5m5].[none:detection_method:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='mass_radius_landscape_of_known_exoplanets'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.10yltex0zyrdip1ah1be206xk5m5].[none:planet_type:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{DE4B2FC8-C282-41CA-BEB6-6CE829512D35}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Exoplanet_Dashboard' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='T_eq' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='detection_methods' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='mass_radius_landscape_of_known_exoplanets' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
